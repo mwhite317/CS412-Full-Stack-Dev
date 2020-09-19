@@ -1,0 +1,93 @@
+Mark White
+19/9/2020
+
+CS 412: Full-Stack Development
+
+Part 1:
+ 
+1. 
+$ delay 2000
+$ show goal
+$ git commit
+$ git commit
+
+
+2.	
+$ delay 2000
+$ show goal
+$ git branch bugFix
+$ git checkout bugfix
+
+
+3.	
+$ delay 2000
+$ show goal
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git merge bugFix
+
+
+4.	
+$ delay 2000
+$ show goal
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git checkout bugFix
+$ git rebase master
+
+
+Part 2:
+
+1.	
+$ delay 2000
+$ show goal
+$ git checkout c4
+
+
+2.	
+$ delay 2000
+$ show goal
+$ git checkout c3
+
+3.	
+$ delay 2000
+$ show goal
+$ git checkout bugFix
+$ git rebase c6
+
+Fast forwarding...
+$ git checkout master
+$ git branch -f master c1
+$ git rebase bugFix
+Fast forwarding...
+$ git branch -f bugFix HEAD~4
+$ git checkout c1
+
+
+4.	
+$ delay 2000
+$ show goal
+$ git reset HEAD~1
+$ git checkout pushed
+$ git revert HEAD
+
+
+Part 3:
+
+1.	
+$ delay 2000
+$ show goal
+$ git cherry-pick c3 c4 c7
+
+2.	
+$ delay 2000
+$ show goal
+$ git rebase -i HEAD~4
+
+
