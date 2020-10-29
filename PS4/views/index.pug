@@ -2,4 +2,8 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Search below to find the current temperature of your desired city:
+  form(class="form-lookup" method="POST" action="/ps4")
+
+    input(id="inputCity" name="inputCity" placeholder="Boston" autofocus)
+    button(type="submit") search
