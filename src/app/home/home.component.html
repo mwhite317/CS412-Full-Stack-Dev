@@ -1,3 +1,7 @@
-<p>
-  home works!
-</p>
+<button (click)="addTemp()" class="btn">Fetch</button>
+<div *ngIf="weatherData">
+  <ng-template ngFor let-hourlyTemp [ngForOf]="weatherData" let-hour="index">
+
+    <p>{{hour}}: {{hourlyTemp}}</p>
+  </ng-template>
+</div>
